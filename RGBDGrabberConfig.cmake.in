@@ -1,0 +1,22 @@
+# RGBDGrabber Library CMake configuration file
+#
+# Usage:
+#
+#	find_package(RGBDGrabber REQUIRED)
+#   include_directories(${RGBDGRABBER_INCLUDE_DIRS})
+#   link_directories(${RGBDGRABBER_LIBRARY_DIRS})
+#   target_link_libraries(MY_TARGET ${RGBDGRABBER_LIBRARIES})
+#
+# Exported variables:
+#   
+#   - RGBDGRABBER_INCLUDE_DIRS : the list of directories containing included headers
+#   - RGBDGRABBER_LIBRARY_DIRS : the list of directories containing libraries
+#   - RGBDGRABBER_LIBRARIES : the list of libraries to link against
+#
+
+set(RGBDGRABBER_MAJOR_VERSION @RGBDGRABBER_MAJOR_VERSION@)
+set(RGBDGRABBER_MINOR_VERSION @RGBDGRABBER_MINOR_VERSION@)
+
+set(RGBDGRABBER_INCLUDE_DIRS "@RGBDGRABBER_INCLUDE_DIR@")
+set(RGBDGRABBER_LIBRARY_DIRS "@RGBDGRABBER_LIBRARY_DIR@")
+set(RGBDGRABBER_LIBRARIES @RGBDGRABBER_LIBRARY@)
